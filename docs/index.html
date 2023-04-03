@@ -15,6 +15,11 @@
       object-fit: cover;
       border-radius: 128px;
     }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
   
     .thumbnail {
       width: 48px;
@@ -25,26 +30,49 @@
   
     body {
       background-color: #fef6e4;
+      display: flex;
+      justify-content: center;
     }
   
     .name {
       color: #001858;
+      display: flex;
+      justify-content: center;
     }
   
     .social-icons a {
       color: #001858;
       text-decoration: none;
+      display: flex;
+      justify-content: space-around;
     }
   
     .link {
       background-color: #90b4ce;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+
     }
   
     .link a {
       color: #001e1d;
       text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
     }
   
+    * {
+      border: thin red solid;
+    }
     
   </style>
 
@@ -56,6 +84,7 @@
 
 <body>
 
+  <div class="items">
     <div class="banner">
       <img src="/img/profic-pic.webp" alt="boyie-chen" class="banner-image">
     </div>
@@ -98,6 +127,7 @@
         Side projects with Raspberry Pi -- Build your own private cloud with OpenMediaVault
       </a>
     </div>
+  </div>
         
 
 
